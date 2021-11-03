@@ -22,7 +22,7 @@ jobs:
       run: mkdir -p ${{ github.workspace }}/build
 
     - name: Build
-      run: go build -v ./... -o ${{ github.workspace }}/build
+      run: go build -o ${{ github.workspace }}/build -v ./...
 
     - name: Test
       run: go test -v ./...
